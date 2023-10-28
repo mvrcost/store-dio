@@ -53,3 +53,15 @@
     font-weight: 600;
    border-radius: 10px;
 }
+
+.menu-bar__input{
+    display: flex;
+    width: 15%;
+    border: 1px solid black;
+    margin-right: 15px;
+    
+}
+
+.menu-bar__input>input{
+    width: 100%;
+}

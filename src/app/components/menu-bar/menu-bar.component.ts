@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router} from "@angular/router";
+
 
 @Component({
   selector: 'app-menu-bar',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-bar.component.css']
 })
 export class MenuBarComponent {
+   @Input()foundpage:string = ''
 
+   constructor(private router: Router) {}
+ 
+   changeRouter() {
+     this.router.navigate(['', this.foundpage]);
+   }
 }
